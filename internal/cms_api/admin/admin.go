@@ -18,8 +18,8 @@ import (
 // register
 func AdminLogin(c *gin.Context) {
 	var (
-		req cms_api_struct.AdminLoginRequest
-		resp cms_api_struct.AdminLoginResponse
+		req   cms_api_struct.AdminLoginRequest
+		resp  cms_api_struct.AdminLoginResponse
 		reqPb pbAdmin.AdminLoginReq
 	)
 	if err := c.BindJSON(&req); err != nil {

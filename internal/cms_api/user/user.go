@@ -48,8 +48,8 @@ func GetUserById(c *gin.Context) {
 
 func GetUsersByName(c *gin.Context) {
 	var (
-		req cms_api_struct.GetUsersByNameRequest
-		resp cms_api_struct.GetUsersByNameResponse
+		req   cms_api_struct.GetUsersByNameRequest
+		resp  cms_api_struct.GetUsersByNameResponse
 		reqPb pb.GetUsersByNameReq
 	)
 	if err := c.ShouldBindQuery(&req); err != nil {

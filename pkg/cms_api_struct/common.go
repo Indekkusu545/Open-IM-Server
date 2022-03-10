@@ -7,5 +7,5 @@ type RequestPagination struct {
 
 type ResponsePagination struct {
 	CurrentPage int `json:"current_number" binding:"required"`
-	ShowNumber int `json:"show_number" binding:"required"`
+	ShowNumber  int `json:"show_number" binding:"required"`
 }

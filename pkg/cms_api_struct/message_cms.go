@@ -8,8 +8,8 @@ type BroadcastResponse struct {
 }
 
 type MassSendMassageRequest struct {
-	Message string `json:"message"`
-	Users []string `json:"users"`
+	Message string   `json:"message"`
+	Users   []string `json:"users"`
 }
 
 type MassSendMassageResponse struct {
@@ -30,12 +30,12 @@ type ChatLog struct {
 	SessionType    int    `json:"session_type"`
 	ContentType    int    `json:"content_type"`
 	SenderNickName string `json:"sender_nick_name"`
-	SenderId       string    `json:"sender_id"`
+	SenderId       string `json:"sender_id"`
 	SearchContent  string `json:"search_content"`
 	WholeContent   string `json:"whole_content"`
 
 	ReceiverNickName string `json:"receiver_nick_name,omitempty"`
-	ReceiverID       string  `json:"receiver_id,omitempty"`
+	ReceiverID       string `json:"receiver_id,omitempty"`
 
 	GroupName string `json:"group_name,omitempty"`
 	GroupId   string `json:"group_id,omitempty"`
@@ -44,7 +44,7 @@ type ChatLog struct {
 }
 
 type GetChatLogsResponse struct {
-	ChatLogs []ChatLog `json:"chat_logs"`
-	ChatLogsNum int `json:"log_nums"`
+	ChatLogs    []ChatLog `json:"chat_logs"`
+	ChatLogsNum int       `json:"log_nums"`
 	ResponsePagination
 }

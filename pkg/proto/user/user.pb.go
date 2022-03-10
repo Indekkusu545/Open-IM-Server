@@ -6,7 +6,6 @@
 
 package user
 
-
 import (
 	sdk_ws "Open_IM/pkg/proto/sdk_ws"
 	context "context"

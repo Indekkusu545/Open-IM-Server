@@ -1,9 +1,8 @@
 package call_back_struct
 
-
 type CallbackBeforeSendSingleMsgReq struct {
 	CommonCallbackReq
-	RecvID  string `json:"recvID"`
+	RecvID string `json:"recvID"`
 }
 
 type CallbackBeforeSendSingleMsgResp struct {
@@ -12,7 +11,7 @@ type CallbackBeforeSendSingleMsgResp struct {
 
 type CallbackAfterSendSingleMsgReq struct {
 	CommonCallbackReq
-	RecvID  string `json:"recvID"`
+	RecvID string `json:"recvID"`
 }
 
 type CallbackAfterSendSingleMsgResp struct {

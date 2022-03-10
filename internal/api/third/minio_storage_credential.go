@@ -16,7 +16,7 @@ import (
 
 func MinioStorageCredential(c *gin.Context) {
 	var (
-		req apiStruct.MinioStorageCredentialReq
+		req  apiStruct.MinioStorageCredentialReq
 		resp apiStruct.MiniostorageCredentialResp
 	)
 	if err := c.BindJSON(&req); err != nil {
@@ -51,5 +51,5 @@ func MinioStorageCredential(c *gin.Context) {
 	resp.AccessKeyID = v.AccessKeyID
 	resp.BucketName = config.Config.Credential.Minio.Bucket
 	resp.StsEndpointURL = config.Config.Credential.Minio.Endpoint
-	c.JSON(http.StatusOK, gin.H{"errCode": 0, "errMsg": "", "data":resp})
+	c.JSON(http.StatusOK, gin.H{"errCode": 0, "errMsg": "", "data": resp})
 }

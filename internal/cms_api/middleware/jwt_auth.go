@@ -15,7 +15,7 @@ func JWTAuth() gin.HandlerFunc {
 		log.NewInfo("0", utils.GetSelfFuncName(), "userID: ", userID)
 		c.Set("userID", userID)
 		if !ok {
-			log.NewError("","GetUserIDFromToken false ", c.Request.Header.Get("token"))
+			log.NewError("", "GetUserIDFromToken false ", c.Request.Header.Get("token"))
 			c.Abort()
 			http.RespHttp200(c, constant.ErrParseToken, nil)
 			return

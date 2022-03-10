@@ -11,4 +11,3 @@ func main() {
 	rpcServer := rpcMessageCMS.NewAdminCMSServer(*rpcPort)
 	rpcServer.Run()
 }
-

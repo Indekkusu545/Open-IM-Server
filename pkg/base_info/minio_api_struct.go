@@ -6,8 +6,8 @@ type MinioStorageCredentialReq struct {
 
 type MiniostorageCredentialResp struct {
 	SecretAccessKey string `json:"secretAccessKey"`
-	AccessKeyID string `json:"accessKeyID"`
-	SessionToken string `json:"sessionToken"`
-	BucketName string `json:"bucketName"`
-	StsEndpointURL string `json:"stsEndpointURL"`
+	AccessKeyID     string `json:"accessKeyID"`
+	SessionToken    string `json:"sessionToken"`
+	BucketName      string `json:"bucketName"`
+	StsEndpointURL  string `json:"stsEndpointURL"`
 }

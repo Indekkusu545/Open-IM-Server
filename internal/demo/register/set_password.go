@@ -69,7 +69,7 @@ func SetPassword(c *gin.Context) {
 		if err != nil {
 			log.NewError(params.OperationID, utils.GetSelfFuncName(), err.Error())
 		}
-		c.JSON(http.StatusOK, gin.H{"errCode": constant.RegisterFailed, "errMsg": "register failed: "+openIMRegisterResp.ErrMsg})
+		c.JSON(http.StatusOK, gin.H{"errCode": constant.RegisterFailed, "errMsg": "register failed: " + openIMRegisterResp.ErrMsg})
 		return
 	}
 	log.Info(params.OperationID, "begin store mysql", account, params.Password)
